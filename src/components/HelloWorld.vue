@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import sourceData from "./../../src/data";
+import sourceData from "@/data";
 
 export default {
   name: "HelloWorld",
