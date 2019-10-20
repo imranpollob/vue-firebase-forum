@@ -1,7 +1,14 @@
 <template>
   <form @submit.prevent="save">
     <div class="form-group">
-      <textarea name id cols="30" rows="10" class="form-input" v-model="text"></textarea>
+      <textarea
+        name
+        id
+        cols="30"
+        rows="10"
+        class="form-input"
+        v-model="text"
+      ></textarea>
     </div>
     <div class="form-actions">
       <button class="btn-blue">Submit post</button>
@@ -16,11 +23,13 @@ export default {
       required: true
     }
   },
+
   data() {
     return {
       text: ""
     };
   },
+
   methods: {
     save() {
       const postId = "greatPost" + Math.random();
@@ -38,5 +47,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

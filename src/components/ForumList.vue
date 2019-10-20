@@ -1,6 +1,10 @@
 <template>
   <div>
-    <ForumListItem v-for="forum in forums" :forum="forum" :key="forum['.key']" />
+    <ForumListItem
+      v-for="forum in forums"
+      :forum="forum"
+      :key="forum['.key']"
+    />
   </div>
 </template>
 
@@ -21,5 +25,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

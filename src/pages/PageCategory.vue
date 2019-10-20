@@ -1,6 +1,7 @@
 <template>
   <div class="col-full">
     <h1>{{ category.name }}</h1>
+
     <CategoryListItem :category="category" />
   </div>
 </template>
@@ -29,5 +30,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

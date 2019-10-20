@@ -1,6 +1,10 @@
 <template>
   <div>
-    <CategoryListItem v-for="category in categories" :category="category" :key="category['.key']" />
+    <CategoryListItem
+      v-for="category in categories"
+      :category="category"
+      :key="category['.key']"
+    />
   </div>
 </template>
 
@@ -21,5 +25,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
