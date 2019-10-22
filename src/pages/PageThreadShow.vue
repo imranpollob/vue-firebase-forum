@@ -13,7 +13,7 @@
 
     <PostList :posts="posts" />
 
-    <PostEditor @save="addPost" :threadId="id" />
+    <PostEditor :threadId="id" />
   </div>
 </template>
 
@@ -38,18 +38,6 @@ export default {
     return {
       newPostText: ""
     };
-  },
-
-  methods: {
-    addPost({ post }) {
-      const postId = post[".key"];
-
-      this.$set(this.$store.state.posts, postId, post);
-      this.$set(this.thread.posts, postId, postId);
-      this.$set(this.$store.state.users[post.userId].posts, postId, postId);
-
-      this.newPostText = "";
-    }
   },
 
   computed: {
