@@ -4,8 +4,7 @@
       <router-link
         class="text-xlarge"
         :to="{ name: 'Forum', params: { id: forum['.key'] } }"
-        >{{ forum.name }}</router-link
-      >
+      >{{ forum.name }}</router-link>
       <p>{{ forum.description }}</p>
     </div>
 
@@ -21,6 +20,8 @@
 </template>
 
 <script>
+import { countObjectProperties } from "@/utils";
+
 export default {
   props: {
     forum: {
