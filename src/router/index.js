@@ -4,6 +4,7 @@ import Home from "@/pages/PageHome";
 import Category from "@/pages/PageCategory";
 import Forum from "@/pages/PageForum";
 import ThreadShow from "@/pages/PageThreadShow";
+import ThreadCreate from "@/pages/PageThreadCreate";
 import Profile from "@/pages/PageProfile";
 import NotFound from "@/pages/PageNotFound";
 
@@ -26,6 +27,12 @@ export default new Router({
       path: "/forum/:id",
       name: "Forum",
       component: Forum,
+      props: true
+    },
+    {
+      path: "/thread/create",
+      name: "ThreadCreate",
+      component: ThreadCreate,
       props: true
     },
     {
