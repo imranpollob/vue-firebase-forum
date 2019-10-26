@@ -39,6 +39,7 @@ export default {
     forum() {
       return this.$store.state.forums[this.id];
     },
+
     threads() {
       return Object.values(this.$store.state.threads).filter(
         thread => thread.forumId === this.id
