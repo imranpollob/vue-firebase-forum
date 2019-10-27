@@ -30,7 +30,7 @@ export default new Router({
       props: true
     },
     {
-      path: "/thread/create",
+      path: "/thread/create/:id",
       name: "ThreadCreate",
       component: ThreadCreate,
       props: true
